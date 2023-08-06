@@ -8,7 +8,7 @@ const getWeatherBtn = document.getElementById("weatherBtn");
 const getAPI = async function () {
   let WeatherValue = document.querySelector(".input").value;
   const res = await fetch(
-    `http://api.weatherapi.com/v1/current.json?key=${YOUR_API_KEY}&q=${WeatherValue}`
+    `https://api.weatherapi.com/v1/current.json?key=${YOUR_API_KEY}&q=${WeatherValue}`
   );
   const data = await res.json();
 
