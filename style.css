@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap");
+
 *,
 *::after,
 *::before {
@@ -12,6 +14,9 @@ body {
   align-items: center;
   min-height: 100vh;
   font-family: sans-serif;
+  background-color: rgba(11, 235, 97, 0.5);
+  padding: 2rem;
+  font-family: "Roboto Slab", serif;
 }
 
 .header {
@@ -23,24 +28,27 @@ body {
 }
 
 .container {
-  width: 40rem;
-  height: 35rem;
+  width: 70rem;
+  height: 45rem;
   box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  background-image: url(img/neda-astani-KWTkd7mHqKE-unsplash.webp);
 }
 
 .second_container {
+  padding-top: 2rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  gap: 0.5rem;
 }
 
 .input {
   border: none;
-  min-width: 20rem;
+  min-width: 40rem;
   min-height: 2rem;
   font-size: 1.5rem;
   padding: 0.5rem;
+  border-radius: 15px;
 }
 
 .input:focus {
@@ -49,17 +57,19 @@ body {
 
 .button {
   border: none;
-  background: #007bff;
-  color: #fff;
+  background: #fafafa;
+  color: gray;
   height: 2.5rem;
-  width: 8rem;
   border-radius: 5px;
+  font-size: 1.5rem;
   cursor: pointer;
+  padding: 0.5rem 2rem 0.5rem 2rem;
 }
 
 .button:hover {
-  background: #004bff;
+  background: rgba(11, 235, 97);
   transition: all 0.5s;
+  transform: scale(1.1);
 }
 
 .third_container {
@@ -74,15 +84,23 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 5rem;
+  gap: 2rem;
   margin-top: 1.5rem;
 }
 
 .weather-info > p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   padding: 1rem;
-  background-color: aliceblue;
+  background-color: rgba(11, 235, 97);
   height: 4.5rem;
-  width: 9.5rem;
+  width: 11.5rem;
+  border-radius: 15px;
+  font-size: 1.25rem;
+  color: #fff;
+  font-weight: bolder;
 }
 
 .celcius {
@@ -93,8 +111,16 @@ body {
 
 .weather-update {
   font-size: 1.5rem;
+  color: black;
 }
 
 .container-opacity {
   opacity: 0;
+}
+
+.error-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
 }
